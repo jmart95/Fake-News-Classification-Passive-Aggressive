@@ -6,7 +6,7 @@ Simulated credit card transaction data from the research collaboration between W
 ## Objective
 Evaluate performance of AutoXGB against the standard XGBoost + RandomizedSearchCV setup
 ## Steps
-Data processing of credit card transaction dataset, with special focus on handling class imbalance with SMOTE and Random Undersampling
+* Data processing of credit card transaction dataset, with special focus on handling class imbalance with SMOTE and Random Undersampling
 Select appropriate performance metric for binary classification task i.e. Average Precision
 Run training for baseline model: XGBoost with RandomizedSearchCV
 Run training for AutoXGB
@@ -17,3 +17,6 @@ The time taken for AutoXGB training is approximately 30% shorter, taking just 9 
 Another key advantage of AutoXGB is that we are only one command line away from serving the model as a FastAPI endpoint. This setup reduces the time to model deployment, which is a critical factor beyond training time.
 While the performance metrics give AutoXGB an edge, one of its most significant issues is the loss of granular control in the parameter settings e.g. unable to set eval_metric for XGBClassifier, unable to set specific validation sets for cross-validation
 At the end of the day, while solutions like AutoXGB do well in simplifying (and possibly improving) XGBoost implementation, data scientists need to understand its limitations by knowing what goes on under the hood.
+## References
+* https://www.nltk.org/
+* https://www.kaggle.com/c/fake-news/overview
