@@ -1,6 +1,6 @@
 # Fake News Detection
 ## Context
-A king of yellow journalism, fake news is false information and hoaxes spread through social media and other online media to achieve a political agenda. We will use Python to build a model that can accurately detect whether a piece of news is real or fake. We’ll build a TfidfVectorizer and evalualte moulitple models' performance in classifying news as either “Real” or “Fake”. 
+The Passive-Aggressive classifier takes in one piece at a time, adjusting the weights of its model based on each entry's results. If the prediction is correct, the model is not changed: it is "passive." If the prediction is incorrect, it adjusts the weights of the model until the prediction becomes correct. PA algorithms are ideal for classifying massive streams of data. We’ll build a TfidfVectorizer and evalualte a couple models' performance against the PA model classifying news as either “Real” or “Fake”. 
 ## Dataset
 Fake News dataset from Kaggle Competition (https://www.kaggle.com/c/fake-news/data)
 ## Objective
@@ -21,3 +21,4 @@ Evaluate performance between Passive Aggressive Classifer, Multinomial Naive Bay
 * https://www.nltk.org/
 * https://www.kaggle.com/c/fake-news/overview
 * https://www.geeksforgeeks.org/passive-aggressive-classifiers/#:~:text=Passive%2DAggressive%20algorithms%20are%20called,make%20changes%20to%20the%20model.
+* https://iopscience.iop.org/article/10.1088/1742-6596/1693/1/012158/pdf
